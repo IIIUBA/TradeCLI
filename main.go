@@ -1,6 +1,8 @@
 package main
 
-import "FinTech/commands"
+import (
+	"FinTech/commands"
+)
 
 func main() {
 
@@ -13,4 +15,3 @@ func main() {
 	commands.Execute()
 
 }
-
