@@ -4,6 +4,7 @@ go 1.23.2
 
 require (
 	github.com/gocolly/colly/v2 v2.1.0
+	github.com/mattn/go-sqlite3 v1.14.24
 	github.com/spf13/cobra v1.8.1
 )
 
