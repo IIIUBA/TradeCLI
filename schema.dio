@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="v-R1Ornd7-art1mt2DTd" name="Page-1">
-        <mxGraphModel dx="1060" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1118" dy="1164" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -20,100 +20,123 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="CLI интерфейс (viper)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="365" y="210" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="640" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="57" edge="1">
+                <mxCell id="58" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5" target="57" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Buy" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="68" y="340" width="80" height="20" as="geometry"/>
+                    <mxGeometry x="480" y="120" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="" style="edgeStyle=none;html=1;" parent="1" source="6" target="57" edge="1">
+                <mxCell id="59" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="57" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Sell" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="228" y="340" width="80" height="20" as="geometry"/>
+                    <mxGeometry x="600" y="120" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="" style="edgeStyle=none;html=1;" parent="1" source="7" target="34" edge="1">
+                <mxCell id="35" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="34" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="Stats" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="388" y="340" width="80" height="20" as="geometry"/>
+                    <mxGeometry x="880" y="120" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="" style="edgeStyle=none;html=1;" parent="1" source="8" target="34" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="Portfolio" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="548" y="340" width="80" height="20" as="geometry"/>
+                    <mxGeometry x="1020" y="120" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" style="edgeStyle=none;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="34" edge="1">
+                <mxCell id="37" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="34" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="History" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="708" y="340" width="80" height="20" as="geometry"/>
+                    <mxGeometry x="1160" y="120" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="10" target="19" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="29" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="10" target="27" edge="1">
+                <mxCell id="89" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="10" target="22">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="Сортировка результатов" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="108" y="440" width="147" height="40" as="geometry"/>
+                    <mxGeometry x="480" y="400" width="200" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="19" target="22" edge="1">
+                <mxCell id="91" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="19" target="90">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="Добавление в портфель активы" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="48" y="500" width="120" height="60" as="geometry"/>
+                <mxCell id="19" value="Добавление в портфель актива" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="560" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="Запись в БД" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="93" y="610" width="200" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="31" style="edgeStyle=none;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="27" target="22" edge="1">
+                <mxCell id="86" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="22" target="27">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="Фиксация дохода/убытка" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="208" y="500" width="120" height="60" as="geometry"/>
+                <mxCell id="87" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="22" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="22" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Запись транзакции в БД" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="480" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="27" target="90">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Удаление актива из портфеля" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="560" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="44" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="34" target="43" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="34" target="38" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" style="edgeStyle=none;html=1;" parent="1" source="34" target="41" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="БД" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="528" y="410" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="50" value="" style="edgeStyle=none;html=1;" parent="1" source="38" target="49" edge="1">
+                <mxCell id="96" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="34" target="94">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="Подсчет" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="363" y="490" width="120" height="80" as="geometry"/>
+                <mxCell id="34" value="БД" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="200" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="41" target="99">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="41" value="Отображения купленных контрактов, их цену, изменения после покупки" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="503" y="490" width="160" height="80" as="geometry"/>
+                    <mxGeometry x="960" y="320" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="43" target="99">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="Отобразить последние N операций" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="683" y="490" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="49" value="Генерация статистики в виде символов ASCII" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="363" y="610" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="1200" y="320" width="200" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" value="" style="edgeStyle=none;html=1;" parent="1" source="51" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" value="Точка входа" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="373" y="90" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="760" y="-100" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="60" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="57" target="10" edge="1">
+                <mxCell id="84" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="57" target="83">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" value="Парсинг актуальных котировок" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="101.5" y="380" width="160" height="40" as="geometry"/>
+                    <mxGeometry x="480" y="240" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="83" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="Обновление цен в портфеле&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="320" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="Обновление баланса в БД" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="640" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="94" target="99">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1036.6666666666665" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="94" value="Подсчёт П/У" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="320" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="БД" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="480" width="360" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

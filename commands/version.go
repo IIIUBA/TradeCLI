@@ -12,6 +12,6 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of TradeCLI",
 	Long:  `All software has versions.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("TradeCLI trader terminal v0.1 -- Shiba")
+		fmt.Println("TradeCLI trader terminal v0.1.1 -- Shiba")
 	},
 }

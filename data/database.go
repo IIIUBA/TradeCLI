@@ -8,17 +8,15 @@ import (
 )
 
 func InitDB() *sql.DB {
-	db, err := sql.Open("sqlite3", "database.db")
+	db, err := sql.Open("sqlite3", "data/database.db")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-// 	_, err = db.Exec(`
-// 	INSERT OR IGNORE INTO users (id, balance) VALUES (1, 10000.00)
-// `)
-// 	if err != nil {
-// 		log.Fatal(err)
-// 	}
+	// _, err = db.Exec(`INSERT OR IGNORE INTO users (id, balance) VALUES (1, 100000.00)`)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
 	_, err = db.Exec(`
 	create table if not exists users (

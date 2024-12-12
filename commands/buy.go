@@ -19,14 +19,14 @@ func SetDB(database *sql.DB) {
 var buyCmd = &cobra.Command{
 	Use:   "buy",
 	Short: "Купить фьючерс",
-	Long: `Эта команда позволяет вам покупать указанное количество акций или контрактов фьючерса.
+	Long: `Эта команда позволяет вам покупать указанное количество контрактов фьючерса.
 Пример использования: trader-cli buy SBERF 2`,
 	Args: cobra.ExactArgs(2),
 	Run: func(cmd *cobra.Command, args []string) {
 		symbol := args[0]
 		quantity := args[1]
 
-		qty, err := strconv.ParseFloat(quantity, 64)
+		qty, err := strconv.Atoi(quantity)
 		if err != nil || qty <= 0 {
 			fmt.Println("Ошибка: количество должно быть положительным числом.")
 			return
@@ -34,7 +34,7 @@ var buyCmd = &cobra.Command{
 
 		price := background.GetStockPrice(symbol)
 
-		totalCost := price * qty
+		totalCost := price * float64(qty)
 
 		err = db.QueryRow("SELECT balance FROM users WHERE id = ?", 1).Scan(&balance)
 		if err != nil {
@@ -53,12 +53,13 @@ var buyCmd = &cobra.Command{
 			fmt.Println("Ошибка: не удалось обновить баланс пользователя.")
 		}
 
-		_, err = db.Exec("INSERT INTO transactions (user_id, symbol, quanity, price, type) VALUES (?, ?, ?, ?, ?)", 1, symbol, qty, price, "buy")
+		_, err = db.Exec("INSERT INTO transactions (user_id, symbol, quantity, price, type) VALUES (?, ?, ?, ?, ?)", 1, symbol, qty, price, "buy")
 		if err != nil {
-			fmt.Println("Ошибка: не удалось добавить транзакцию.")
+			fmt.Println("Ошибка: не удалось добавить транзакцию:", err)
+			return
 		}
 
-		fmt.Println("Вы купили " + quantity + " в количестве " + symbol)
+		fmt.Printf("Вы купили %s в количестве %d за %.2f руб.\n", symbol, qty, price)
 
 	},
 }
