@@ -28,9 +28,8 @@ func GetStockPrice(stockName string) float64 {
 	c.OnHTML(".Money-module__money_UZBbh", func(e *colly.HTMLElement) {
 		counter++
 		if counter == targetElementIndex {
-
 			cleanedText := re.ReplaceAllString(e.Text, "")
-			cleanedText = strings.ReplaceAll(cleanedText, ",", ".") 
+			cleanedText = strings.ReplaceAll(cleanedText, ",", ".")
 
 			value, err := strconv.ParseFloat(cleanedText, 64)
 			if err != nil {
@@ -39,6 +38,13 @@ func GetStockPrice(stockName string) float64 {
 			}
 
 			price = value
+		}
+	})
+
+	c.OnHTML("h1", func(e *colly.HTMLElement) {
+		if strings.Contains(e.Text, "Каталог фьючерсов") || strings.Contains(e.Text, "404") {
+			log.Printf("Фьючерс '%s' не найден.", stockName)
+			price = -1 
 		}
 	})
 

@@ -33,7 +33,6 @@ var buyCmd = &cobra.Command{
 		}
 
 		price := background.GetStockPrice(symbol)
-
 		totalCost := price * float64(qty)
 
 		err = db.QueryRow("SELECT balance FROM users WHERE id = ?", 1).Scan(&balance)
@@ -47,10 +46,20 @@ var buyCmd = &cobra.Command{
 			return
 		}
 
+		fmt.Printf("Вы собираетесь купить %s в количестве %d за %.2f руб. Ваш баланс: %.2f. Продолжить? (да/нет): ", symbol, qty, totalCost, balance)
+		var confirmation string
+		fmt.Scanln(&confirmation)
+
+		if confirmation != "да" {
+			fmt.Println("Покупка отменена.")
+			return
+		}
+
 		newBalance := balance - totalCost
 		_, err = db.Exec("UPDATE users SET balance = ? WHERE id = ?", newBalance, 1)
 		if err != nil {
 			fmt.Println("Ошибка: не удалось обновить баланс пользователя.")
+			return
 		}
 
 		_, err = db.Exec("INSERT INTO transactions (user_id, symbol, quantity, price, type) VALUES (?, ?, ?, ?, ?)", 1, symbol, qty, price, "buy")
@@ -59,7 +68,6 @@ var buyCmd = &cobra.Command{
 			return
 		}
 
-		fmt.Printf("Вы купили %s в количестве %d за %.2f руб.\n", symbol, qty, price)
-
+		fmt.Printf("Вы успешно купили %s в количестве %d за %.2f руб. Ваш новый баланс: %.2f\n", symbol, qty, price, newBalance)
 	},
 }
