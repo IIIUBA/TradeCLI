@@ -32,7 +32,7 @@ go mod tidy
 
 ### 4. Забилдите приложение
 ```bash
-go build main.go
+go build -o TradeCLI main.go
 ```
 
 ---
